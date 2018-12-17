@@ -8,7 +8,7 @@ export default class CardContainer extends React.Component{
     generateCard = () => {
         let i = 0
         return this.props.cards.map(word => {
-            return <Card  key = {word.id} word = {word.word} color = {this.props.colors[i++]}/>
+            return <Cardword = {word.word} color = {this.props.colors[i++]}/>
         })
     }
     render(){
